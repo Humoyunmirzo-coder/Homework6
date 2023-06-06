@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Homework6.NewFolder
+﻿internal class Program
 {
-    internal class Bin_and_ojc
+    private static void Main(string[] args)
     {
+
+        string file = "C:\\Gitignore\\test.txt";
+
+        var files = Directory.GetFiles(file, "*bin.*", SearchOption.AllDirectories);
+        foreach (string filess in files)
+        {
+            Console.WriteLine(filess);
+        }
+
     }
 }
